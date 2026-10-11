@@ -1,0 +1,11 @@
+# Core dependency (required for config loading and the framework itself).
+pyyaml
+
+# Optional provider SDKs - install only what you use:
+#   pip install agentforge[openai]      # OpenAI
+#   pip install agentforge[anthropic]   # Anthropic (Claude)
+#   pip install agentforge[ollama]      # Local Ollama
+#   pip install agentforge[all]         # everything
+# openai>=1.0
+# anthropic>=0.20
+# requests>=2.28

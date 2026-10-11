@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentforge"
+version = "0.1.0"
+description = "Lightweight, provider-agnostic AI agent framework that runs out-of-the-box with a zero-key Mock provider."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "AgentForge Contributors" }]
+keywords = ["ai", "agent", "llm", "framework", "react", "multi-agent"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["pyyaml"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+anthropic = ["anthropic>=0.20"]
+ollama = ["requests>=2.28"]
+all = ["openai>=1.0", "anthropic>=0.20", "requests>=2.28"]
+
+[project.scripts]
+agentforge = "agentforge.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/agentforge/agentforge"
+Documentation = "https://github.com/agentforge/agentforge#readme"
+
+[tool.setuptools]
+packages = ["agentforge", "agentforge.core", "agentforge.providers", "agentforge.tools"]
+
+[tool.setuptools.package-data]
+agentforge = ["py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

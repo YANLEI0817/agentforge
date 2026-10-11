@@ -12,10 +12,20 @@ license = { text = "MIT" }
 authors = [{ name = "AgentForge Contributors" }]
 keywords = ["ai", "agent", "llm", "framework", "react", "multi-agent"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
 ]
 dependencies = ["pyyaml"]
 
@@ -29,8 +39,11 @@ all = ["openai>=1.0", "anthropic>=0.20", "requests>=2.28"]
 agentforge = "agentforge.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/agentforge/agentforge"
-Documentation = "https://github.com/agentforge/agentforge#readme"
+Homepage = "https://github.com/YANLEI0817/agentforge"
+Repository = "https://github.com/YANLEI0817/agentforge"
+Issues = "https://github.com/YANLEI0817/agentforge/issues"
+Changelog = "https://github.com/YANLEI0817/agentforge/blob/main/CHANGELOG.md"
+Documentation = "https://github.com/YANLEI0817/agentforge#readme"
 
 [tool.setuptools]
 packages = ["agentforge", "agentforge.core", "agentforge.providers", "agentforge.tools"]

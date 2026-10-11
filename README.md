@@ -1,5 +1,13 @@
 # 🔥 AgentForge
 
+<p align="center">
+  <a href="https://github.com/YANLEI0817/agentforge/actions/workflows/ci.yml"><img src="https://github.com/YANLEI0817/agentforge/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <img src="https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue.svg" alt="Python 3.9 | 3.10 | 3.11 | 3.12 | 3.13">
+  <a href="https://github.com/YANLEI0817/agentforge/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://github.com/YANLEI0817/agentforge/stargazers"><img src="https://img.shields.io/github/stars/YANLEI0817/agentforge?style=social" alt="GitHub stars"></a>
+</p>
+
 > **轻量、Provider 无关、开箱即跑的 AI Agent 开发框架。**
 > 默认内置 **Mock Provider**——无需任何 API 密钥，所有示例与测试即可运行。
 

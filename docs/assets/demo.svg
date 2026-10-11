@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" aria-label="AgentForge CLI demo running offline with the built-in mock provider">
+  <defs>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101728"/>
+      <stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="400" rx="14" fill="url(#win)"/>
+  <rect x="0" y="0" width="900" height="40" rx="14" fill="#161B2E"/>
+  <rect x="0" y="26" width="900" height="14" fill="#161B2E"/>
+  <circle cx="26" cy="20" r="6.5" fill="#FF5F56"/>
+  <circle cx="47" cy="20" r="6.5" fill="#FFBD2E"/>
+  <circle cx="68" cy="20" r="6.5" fill="#27C93F"/>
+  <text x="96" y="25" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#8B93A7">agentforge · mock provider · offline</text>
+
+  <g font-family="'Cascadia Code','Consolas','Microsoft YaHei','Courier New',monospace" font-size="16">
+    <text x="28" y="84" fill="#7DD3FC">$ python -m agentforge.cli --task "&#35745;&#31639; (2+3)*4 &#24182;&#21521;&#25105;&#35299;&#37322;"</text>
+
+    <text x="28" y="128" fill="#FBBF24">[tool.call]   </text>
+    <text x="146" y="128" fill="#E2E8F0">calculator   {"expression": "(2+3)*4"}</text>
+
+    <text x="28" y="160" fill="#34D399">[tool.result] </text>
+    <text x="146" y="160" fill="#E2E8F0">14</text>
+
+    <text x="28" y="192" fill="#A78BFA">[agent.done]  </text>
+    <text x="146" y="192" fill="#E2E8F0">&#26681;&#25454;&#24037;&#20855;&#32467;&#26524;&#65292;&#31572;&#26696;&#26159;&#65306;14&#12290;</text>
+
+    <text x="28" y="248" fill="#E2E8F0">ANSWER: </text>
+    <text x="112" y="248" fill="#F8FAFC">&#26681;&#25454;&#24037;&#20855;&#32467;&#26524;&#65292;&#31572;&#26696;&#26159;&#65306;14&#12290;</text>
+
+    <text x="28" y="292" fill="#64748B">TRACE : step 0  tools=[calculator]    step 1  tools=[-]</text>
+
+    <text x="28" y="344" fill="#7DD3FC">$ </text>
+    <rect x="52" y="332" width="10" height="18" fill="#7DD3FC" opacity="0.85"/>
+  </g>
+
+  <g font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13">
+    <text x="720" y="380" fill="#475569">no API key · 21 tests pass</text>
+  </g>
+</svg>

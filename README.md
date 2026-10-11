@@ -39,6 +39,20 @@
 
 ---
 
+## 🎬 30 秒演示
+
+<p align="center">
+  <img src="docs/assets/demo.svg" alt="AgentForge CLI demo — runs offline with the built-in mock provider" width="900">
+</p>
+
+无需安装任何 SDK、无需任何 API Key，克隆后即可复现上面的终端输出：
+
+```bash
+python -m agentforge.cli --task "计算 (2+3)*4 并向我解释"
+```
+
+---
+
 ## 📦 安装
 
 ```bash

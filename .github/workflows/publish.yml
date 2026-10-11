@@ -41,6 +41,9 @@ jobs:
   publish:
     name: Publish to PyPI
     needs: build
+    # Safety switch: only publish once PyPI Trusted Publishing is configured.
+    # Set the repository variable PYPI_ENABLED=true (Settings → Variables) to enable.
+    if: ${{ vars.PYPI_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     environment:
       name: pypi

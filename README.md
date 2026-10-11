@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/banner.svg" alt="AgentForge — lightweight, provider-agnostic multi-agent framework" width="900">
+</p>
+
 # 🔥 AgentForge
 
 <p align="center">
@@ -42,13 +46,13 @@
 pip install -e .
 
 # 或从 PyPI（发布后）
-pip install agentforge
+pip install agent-forge
 
 # 按需安装真实 Provider 的 SDK
-pip install agentforge[openai]      # OpenAI
-pip install agentforge[anthropic]   # Anthropic (Claude)
-pip install agentforge[ollama]      # 本地 Ollama
-pip install agentforge[all]         # 全部
+pip install "agent-forge[openai]"      # OpenAI
+pip install "agent-forge[anthropic]"   # Anthropic (Claude)
+pip install "agent-forge[ollama]"      # 本地 Ollama
+pip install "agent-forge[all]"         # 全部
 ```
 
 核心仅依赖 `pyyaml`，其余 SDK 均为可选。
@@ -102,12 +106,14 @@ provider = get_provider("mock")()
 from agentforge.core.tool import tool
 
 @tool
-def calculator(expression: str) -> str:
-    """计算安全算术表达式。"""
-    return str(eval(expression, {"__builtins__": {}}, {}))
+def multiply(a: float, b: float) -> str:
+    """返回两个数的乘积。"""
+    return str(a * b)
 
-calculator.run(expression="(2+3)*4")   # => "20"
+multiply.run(a=2, b=5)   # => "10.0"
 ```
+
+> 提示：内置的 `calculator` 使用 **AST 白名单解析**（而非 `eval`），可拦截任意代码与资源耗尽类输入。
 
 ### Memory —— 对话历史 + 长期记忆
 `MemoryStore` 提供短期对话（`add` / `history`）与长期 KV（`remember` / `recall`），可作为扩展点替换为向量库。

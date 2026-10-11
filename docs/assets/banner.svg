@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="AgentForge — lightweight, provider-agnostic multi-agent framework">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4338CA"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="ic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="240" rx="24" fill="url(#bg)"/>
+  <g transform="translate(60,60) scale(0.95)">
+    <rect x="0" y="0" width="120" height="120" rx="28" fill="url(#ic)"/>
+    <g stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95">
+      <path d="M60 32 L86 47 L86 79 L60 94 L34 79 L34 47 Z"/>
+      <path d="M60 32 L60 63 M60 63 L86 79 M60 63 L34 79"/>
+    </g>
+    <g fill="#ffffff">
+      <circle cx="60" cy="32" r="7.5"/>
+      <circle cx="86" cy="79" r="7.5"/>
+      <circle cx="34" cy="79" r="7.5"/>
+      <circle cx="60" cy="63" r="8.5"/>
+    </g>
+  </g>
+  <text x="240" y="112" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="62" font-weight="700" fill="#ffffff">AgentForge</text>
+  <text x="242" y="160" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="25" fill="#DBEAFE">Lightweight, provider-agnostic multi-agent framework</text>
+  <text x="242" y="198" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="21" fill="#A5F3FC">Runs out of the box — no API key required</text>
+</svg>

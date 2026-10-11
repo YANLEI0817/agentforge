@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or usage help
+    url: https://github.com/YANLEI0817/agentforge/discussions
+    about: Ask questions and get help from the community
+  - name: Read the docs
+    url: https://github.com/YANLEI0817/agentforge#readme
+    about: Check the README and ARCHITECTURE guide first

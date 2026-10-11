@@ -158,6 +158,34 @@ chore(ci): bump setup-python to v5
 
 ---
 
+## 发布 · Publishing
+
+项目通过 **PyPI Trusted Publishing (OIDC)** 自动发布，**仓库内不保存任何 Token**。
+
+- 分发名（PyPI distribution）：`agent-forge`；导入包名仍为 `agentforge`。
+- 工作流：`.github/workflows/publish.yml`，在**发布 GitHub Release** 时触发（也支持手动 `workflow_dispatch`）。
+
+首次发布前的一次性配置：
+
+1. 在 <https://pypi.org> 创建/预留项目 `agent-forge`。
+2. 在该项目的 Publishing 设置中新增 **Trusted Publisher**：
+   - Owner：`YANLEI0817`
+   - Repository：`agentforge`
+   - Workflow：`publish.yml`
+   - Environment：`pypi`
+3. 在仓库 Settings → Environments 中创建名为 `pypi` 的环境。
+
+之后只需发布 Release，CI 即会自动构建并上传到 PyPI。
+
+本地预演构建（可选）：
+
+```bash
+python -m build          # 生成 dist/*.whl 与 *.tar.gz
+python -m twine check dist/*
+```
+
+---
+
 ## 报告 Bug · Reporting Bugs
 
 提交 Issue 时，请尽量包含以下要点（可复制模板）：
@@ -191,13 +219,13 @@ chore(ci): bump setup-python to v5
 
 ## 行为准则 · Code of Conduct
 
-参与本项目即表示你同意遵守贡献者行为准则：**保持尊重、包容与专业**。
+参与本项目即表示你同意遵守贡献者行为准则：**保持尊重、包容与专业**。完整内容见 [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)。
 
 - 对事不对人，欢迎不同观点与技术讨论。
 - 不接受任何形式的骚扰、歧视或人身攻击。
 - 维护者有权删除不当内容并拒绝不符合准则的贡献。
 
-（可参考 [Contributor Covenant](https://www.contributor-covenant.org/zh-cn/version/2/1/code_of_conduct/) 作为通用准则。）
+（本准则基于 [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) v2.1。）
 
 ---
 
